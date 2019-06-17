@@ -15,7 +15,8 @@ document.addEventListener("DOMContentLoaded", chgBgColor);
 colorInput1.addEventListener("input", chgBgColor);
 colorInput2.addEventListener("input", chgBgColor);
 
-function printCssBg() {
+
+const printCSSBg = () => {
     cssDisplay.textContent = "background: " + body.style.background + ";";
 }
 
@@ -39,11 +40,12 @@ copyLink.addEventListener("click", copyToClipboard);
 
 // Click on the random button to generate two random colors.
 
-function randomize() {
-    function getRandomInt(max) { return Math.floor(Math.random() * Math.floor(max)); }
+const randomize = () => {
+    const getRandomInt = max => Math.floor(Math.random() * Math.floor(max));
     let color1 = "rgba("+getRandomInt(255)+","+getRandomInt(255)+","+getRandomInt(255)+")";
     let color2 = "rgba("+getRandomInt(255)+","+getRandomInt(255)+","+getRandomInt(255)+")";
-    body.style.background = "linear-gradient(to right, " + color1 + " , " + color2 + ")";
+    body.style.background = `linear-gradient(to right, ${color1} , ${color2})`;
+
 }
 
 randomButton.addEventListener("click", randomize);
