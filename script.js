@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", chgBgColor);
 colorInput1.addEventListener("input", chgBgColor);
 colorInput2.addEventListener("input", chgBgColor);
 
-function printCssBg() {
+const printCssBg = () => {
     cssDisplay.textContent = "background: " + body.style.background + ";";
 }
 
