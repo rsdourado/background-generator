@@ -1,13 +1,13 @@
-var body = document.getElementById("body");
-var colorInput1 = document.getElementById("color1");
-var colorInput2 = document.getElementById("color2");
-var cssDisplay = document.getElementById("cssDisplay");
-var copyLink = document.getElementById("copy");
-var randomButton = document.getElementById("randomButton");
+const body = document.getElementById("body");
+const colorInput1 = document.getElementById("color1");
+const colorInput2 = document.getElementById("color2");
+const cssDisplay = document.getElementById("cssDisplay");
+const copyLink = document.getElementById("copy");
+const randomButton = document.getElementById("randomButton");
 
 function chgBgColor() {
-    var color1 = colorInput1.value;
-    var color2 = colorInput2.value;
+    let color1 = colorInput1.value;
+    let color2 = colorInput2.value;
     body.style.background = "linear-gradient(to right, " + color1 + " , " + color2 + ")";
 }
 
@@ -41,8 +41,8 @@ copyLink.addEventListener("click", copyToClipboard);
 
 function randomize() {
     function getRandomInt(max) { return Math.floor(Math.random() * Math.floor(max)); }
-    var color1 = "rgba("+getRandomInt(255)+","+getRandomInt(255)+","+getRandomInt(255)+")";
-    var color2 = "rgba("+getRandomInt(255)+","+getRandomInt(255)+","+getRandomInt(255)+")";
+    let color1 = "rgba("+getRandomInt(255)+","+getRandomInt(255)+","+getRandomInt(255)+")";
+    let color2 = "rgba("+getRandomInt(255)+","+getRandomInt(255)+","+getRandomInt(255)+")";
     body.style.background = "linear-gradient(to right, " + color1 + " , " + color2 + ")";
 }
 
