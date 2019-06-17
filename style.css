@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgba(0, 0, 0, 0.5);
+    letter-spacing: .1em;
+    top: 15%;
+}
+
+a {
+    color:rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
+    
+}
+
+a:hover {
+    color:rgba(0, 0, 0, 1);
+    cursor: -webkit-grab; cursor: grab;
+}
+
+a:active {
+    cursor: -webkit-grabbing; cursor: grabbing;
+}
+
+h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 20px 0;
+}
+
+h2 {
+    padding: 20px 0;
+}
+
+#randomButton {
+    display: block;
+    margin: 10px auto;
+}
