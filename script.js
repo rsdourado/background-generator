@@ -1,3 +1,10 @@
+// import { without } from 'lodash'; // 
+var _ = require('lodash');
+
+var array = [1,2,3,4,5,6,7,8];
+console.log('answer:', _.without(array, 3)); // this only a test of lodash
+
+
 const body = document.getElementById("body");
 const colorInput1 = document.getElementById("color1");
 const colorInput2 = document.getElementById("color2");
